@@ -3,8 +3,28 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome to the Ubiquitous Byte</h1>
     <p>This is the first page of an ongoing project to run containers in Kubernates on a Raspberry Pi cluster. The code 
         is deployed from GitHub Actions via a Docker respository push.  K8s pulls down the image and deploys it to 
         the cluster via ....?</p>
+    <hr>
+    <ul>
+        <li>1. Build Rasberry Pi cluster case</li>
+        <li>2. Flash DS cards with Ubuntu for Pi</li>
+        <li>3. Connect up Pis to network hub and power, and plug into network socket.</li>
+        <li>4. Attach to Pis via SSH (using Terminus).</li>
+        <li>5. Set Pi's hostnames to Master, and Node01, 02 and 03.</li>
+        <li>6. Install microK8s via snap on all Pis</li>
+        <li>7. Join node Pi's to the master.  We now have a K8s Cluster!</li>
+        <li>8. Write a basic dotnet MVC website (this one).</li>
+        <li>9. Define Dockerfile to build a Linux arm64 image that will run on a Pi</li>
+        <li>9. Check code into GitHib repo</li>
+        <li>10.Build GitHib Actions workflow to build and push image to Docker hub private respository</li>
+        <li>11.Test image by docker pull dbovenzi/ubiquitousbyte:pi-latest and then ubiquitousbyte % docker run -p 8080:80 d07 </li>
+        <li>12.Confirm image runs on my Mac.</li>
+        <li>13.Build a K8s Deployment file.</li>
+        <li>14.Run the file and deploy to the cluster using kubectl (update kubectl config to point to the cluster api 
+            controller) first.</li>
+        <li>15.Somehow automate the kube deploy process from a GitHub Actions Workflow</li>
+    </ul>
 </div>
