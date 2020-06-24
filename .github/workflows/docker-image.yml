@@ -17,6 +17,8 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.ubuntu-arm64 --tag dbovenzi/ubiquitousbyte:pi-$(date +%s)
     - uses: actions/checkout@v2
+    - name: Publish to Registry
+      uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: myDocker/repository
         username: ${{ secrets.DOCKER_USERNAME }}
