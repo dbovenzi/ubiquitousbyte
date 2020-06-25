@@ -20,6 +20,8 @@ namespace ubiquitousbyte.Controllers
 
         public IActionResult Index()
         {
+            
+            ViewData["MachineName"] = Environment.MachineName;
             return View();
         }
 
