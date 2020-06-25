@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ub-frontend
+  labels:
+    app: ub
+    tier: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: ub-frontend
+        image: dbovenzi/ubiquitousbyte:pi-latest
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "256Mi" #256 MB
+            cpu: "200m" #200 millicpu (.2 cpu or 20% of the cpu)
