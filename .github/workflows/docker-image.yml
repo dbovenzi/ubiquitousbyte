@@ -23,4 +23,4 @@ jobs:
         name: dbovenzi/ubiquitousbyte:pi-latest
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        #dockerfile: Dockerfile.ubuntu-arm64
+        dockerfile: Dockerfile.ubuntu-arm64
