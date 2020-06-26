@@ -20,16 +20,25 @@
         <li class="list-group-item list-group-item-success">8. Write a basic dotnet MVC website (this one).</li>
         <li class="list-group-item list-group-item-success">9. Define Dockerfile to build a Linux arm64 image that will run on a Pi.</li>
         <li class="list-group-item list-group-item-success">9. Check code into GitHib repo.</li>
-        <li class="list-group-item list-group-item-success">10.Build GitHib Actions workflow to build and push image to Docker hub private respository.</li>
-        <li class="list-group-item list-group-item-success">11.Test image by <code>docker pull dbovenzi/ubiquitousbyte:pi-latest</code> and then <code>docker run -p 8080:80 {container id}</code>. </li>
+        <li class="list-group-item list-group-item-success">10.Build GitHib Actions workflow to build and push image to Docker hub 
+            private respository.</li>
+        <li class="list-group-item list-group-item-success">11.Test image by <code>docker pull dbovenzi/ubiquitousbyte:pi-latest</code> 
+        and then <code>docker run -p 8080:80 {container id}</code>. </li>
         <li class="list-group-item list-group-item-success">12.Confirm image runs on my Mac.</li>
-        <li class="list-group-item list-group-item-light">13.Build K8s Deployment and Service config files and add to Git repo.</li>
-        <li class="list-group-item list-group-item-light"></li>Create a kubectl secret to access the docker private reposudo microk8s.kubectl create secret docker-registry regcred --docker-server=https://index.docker.io/v1/  --docker-username=dbovenzi --docker-password=[secret removed] --docker-email=dbovenzi@gmail.com</li>
-        <li class="list-group-item list-group-item-light">14.Run the file and deploy to the cluster using kubectl (update kubectl config to point to the cluster api 
-            controller) first.</li>
-        <li class="list-group-item list-group-item-light">15.Install GitHub self-hosted runner on the master node Pi.</li>
-        <li class="list-group-item list-group-item-light">16.Create a GitHub Action that triggers of a new image update for ubiquitousbyte:piu-latest in Docker Hub and runs kubectl apply using the K8s deployment config in the repo.</li>
-        <li class="list-group-item list-group-item-light">17.Use the self-hoted runner to execute the Kubectl action.</li>
+        <li class="list-group-item list-group-item-success">13.Build K8s Deployment and Service config files and add to Git repo.</li>
+        <li class="list-group-item list-group-item-success">14.Create a kubectl secret to access the docker private reposudo microk8s.kubectl 
+            create secret docker-registry 
+            regcred --docker-server=https://index.docker.io/v1/  --docker-username=dbovenzi --docker-password=[secret removed] 
+            --docker-email=dbovenzi@gmail.com</li>
+        <li class="list-group-item list-group-item-success">15.Run the file and deploy to the cluster using kubectl 
+            (update kubectl config to point to the cluster api controller) first.</li>
+        <li class="list-group-item list-group-item-light">16.Install GitHub self-hosted runner on the master node Pi.</li>
+        <li class="list-group-item list-group-item-light">17.Create a GitHub Action that triggers of a new image update for 
+            ubiquitousbyte:piu-latest in Docker Hub and runs kubectl apply using the K8s deployment config in the repo.</li>
+        <li class="list-group-item list-group-item-light">18.Use the self-hoted runner to execute the Kubectl action.</li>
         
+        <li class="list-group-item list-group-item-light">19.Add a 5th Pi, call it Ingress.</li>
+        
+        <li class="list-group-item list-group-item-light">20.Install free linux loadbalancer on it and balance across the 3 nodes.</li>
     </ul>
 </div>

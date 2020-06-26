@@ -19,6 +19,7 @@ spec:
         image: dbovenzi/ubiquitousbyte:pi-latest
         ports:
         - containerPort: 80
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "256Mi" #256 MB
