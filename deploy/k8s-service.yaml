@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: ub-service
 spec:
+  type: NodePort
   selector:
     app: ub-frontend
   ports:
     - protocol: TCP
-      port: 8080
+      port: 80
       targetPort: 80
+      nodePort: 31000

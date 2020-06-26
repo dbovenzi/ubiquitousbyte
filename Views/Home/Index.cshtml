@@ -24,6 +24,7 @@
         <li class="list-group-item list-group-item-success">11.Test image by <code>docker pull dbovenzi/ubiquitousbyte:pi-latest</code> and then <code>docker run -p 8080:80 {container id}</code>. </li>
         <li class="list-group-item list-group-item-success">12.Confirm image runs on my Mac.</li>
         <li class="list-group-item list-group-item-light">13.Build K8s Deployment and Service config files and add to Git repo.</li>
+        <li class="list-group-item list-group-item-light"></li>Create a kubectl secret to access the docker private reposudo microk8s.kubectl create secret docker-registry regcred --docker-server=https://index.docker.io/v1/  --docker-username=dbovenzi --docker-password=[secret removed] --docker-email=dbovenzi@gmail.com</li>
         <li class="list-group-item list-group-item-light">14.Run the file and deploy to the cluster using kubectl (update kubectl config to point to the cluster api 
             controller) first.</li>
         <li class="list-group-item list-group-item-light">15.Install GitHub self-hosted runner on the master node Pi.</li>

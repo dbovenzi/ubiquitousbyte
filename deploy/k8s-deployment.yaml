@@ -3,17 +3,16 @@ kind: Deployment
 metadata:
   name: ub-frontend
   labels:
-    app: ub
-    tier: frontend
+    app: ub-frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: frontend
+      app : ub-frontend
   template:
     metadata:
       labels:
-        tier: frontend
+        app: ub-frontend
     spec:
       containers:
       - name: ub-frontend
@@ -24,3 +23,5 @@ spec:
           limits:
             memory: "256Mi" #256 MB
             cpu: "200m" #200 millicpu (.2 cpu or 20% of the cpu)
+      imagePullSecrets:
+      - name: regcred
