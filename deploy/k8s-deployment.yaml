@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ub-frontend
-        image: dbovenzi/ubiquitousbyte:pi-latest
+        image: dbovenzi/ubiquitousbyte:latest
         ports:
         - containerPort: 80
         imagePullPolicy: Always
