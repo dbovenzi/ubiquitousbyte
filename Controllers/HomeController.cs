@@ -29,6 +29,14 @@ namespace ubiquitousbyte.Controllers
             return View();
         }
 
+        public IActionResult ServiceReport()
+        {
+            var serviceReports = new List<ServiceReport>();
+            // Loop through each microservice and call /heath - record reponse
+
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
