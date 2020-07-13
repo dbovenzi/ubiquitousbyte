@@ -32,19 +32,20 @@
             --docker-email=dbovenzi@gmail.com</li>
         <li class="list-group-item list-group-item-success">15.Run the file and deploy to the cluster using kubectl 
             (update kubectl config to point to the cluster api controller) first.</li>
-        <li class="list-group-item list-group-item-success">16.Install GitHub self-hosted runner on the master node Pi.</li>
-        <li class="list-group-item list-group-item-success">17.Create a GitHub Action that triggers of a new image update for 
+        <li class="list-group-item list-group-item-success">16. On each node run: <code>sudo iptables -P FORWARD ACCEPT</code> to enable K8s DNS resolution.</li>
+        <li class="list-group-item list-group-item-success">17.Install GitHub self-hosted runner on the master node Pi.</li>
+        <li class="list-group-item list-group-item-success">18.Create a GitHub Action that triggers of a new image update for 
             ubiquitousbyte:piu-latest in Docker Hub and runs kubectl apply using the K8s deployment config in the repo.</li>
-        <li class="list-group-item list-group-item-success">18.Use the self-hoted runner to execute the Kubectl action.</li>
+        <li class="list-group-item list-group-item-success">19.Use the self-hossted runner to execute the Kubectl action.</li>
         
-        <li class="list-group-item list-group-item-light">19.Add a 5th Pi, call it Ingress.</li>
+        <li class="list-group-item list-group-item-light">20.Add a 5th Pi, call it Ingress.</li>
         
-        <li class="list-group-item list-group-item-light">20.Install free linux loadbalancer (HAProxy) on it and balance across the 3 nodes.</li>
-        <li class="list-group-item list-group-item-success">21.Write a basic dotnet MVC Web API.</li>
-        <li class="list-group-item list-group-item-light">22.Write a few dotnet MVC and console microservices.</li>
-        <li class="list-group-item list-group-item-light">23.Adapt the basic frontend app to call the microservice via the api.</li>
-        <li class="list-group-item list-group-item-light">24.Set up appropriate K8s services to allow cluster access between the FE, API and MSvcs</li>
-        <li class="list-group-item list-group-item-light">25.Add permanent data store</li>
+        <li class="list-group-item list-group-item-light">21.Install free linux loadbalancer (HAProxy) on it and balance across the 3 nodes.</li>
+        <li class="list-group-item list-group-item-success">22.Write a basic dotnet MVC Web API.</li>
+        <li class="list-group-item list-group-item-light">23.Write a few dotnet MVC and console microservices.</li>
+        <li class="list-group-item list-group-item-light">24.Adapt the basic frontend app to call the microservice via the api.</li>
+        <li class="list-group-item list-group-item-light">25.Set up appropriate K8s services to allow cluster access between the FE, API and MSvcs</li>
+        <li class="list-group-item list-group-item-light">26.Add permanent data store</li>
 
     </ul>
 </div>
