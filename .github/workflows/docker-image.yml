@@ -1,21 +1,13 @@
-name: Docker Image CI
-
+name: Website Docker Image CI
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    #- uses: actions/checkout@v2
-    #- name: Build the Docker image
-    #  run: docker build . --file Dockerfile.ubuntu-arm64 --tag dbovenzi/ubiquitousbyte:pi-latest
     - uses: actions/checkout@v2
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
