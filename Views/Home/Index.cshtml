@@ -26,10 +26,11 @@
         and then <code>docker run -p 8080:80 {container id}</code>. </li>
         <li class="list-group-item list-group-item-success">12.Confirm image runs on my Mac.</li>
         <li class="list-group-item list-group-item-success">13.Build K8s Deployment and Service config files and add to Git repo.</li>
-        <li class="list-group-item list-group-item-success">14.Create a kubectl secret to access the docker private reposudo microk8s.kubectl 
-            create secret docker-registry 
-            regcred --docker-server=https://index.docker.io/v1/  --docker-username=dbovenzi --docker-password=[secret removed] 
-            --docker-email=dbovenzi@gmail.com</li>
+        <li class="list-group-item list-group-item-success">14.Create a kubectl secret to access the docker private repo:<br>
+            <code>sudo microk8s.kubectl create secret docker-registry</code> <br>
+            <code>regcred --docker-server=https://index.docker.io/v1/  --docker-username=dbovenzi --docker-password=[secret removed] 
+            --docker-email=dbovenzi@gmail.com</code>
+        </li>
         <li class="list-group-item list-group-item-success">15.Run the file and deploy to the cluster using kubectl 
             (update kubectl config to point to the cluster api controller) first.</li>
         <li class="list-group-item list-group-item-success">16. On each node run: <code>sudo iptables -P FORWARD ACCEPT</code> to enable K8s DNS resolution.</li>
@@ -38,13 +39,15 @@
             ubiquitousbyte:piu-latest in Docker Hub and runs kubectl apply using the K8s deployment config in the repo.</li>
         <li class="list-group-item list-group-item-success">19.Use the self-hossted runner to execute the Kubectl action.</li>
         
-        <li class="list-group-item list-group-item-light">20.Add a 5th Pi, call it Ingress.</li>
+        <li class="list-group-item list-group-item-success">20.Add a 5th Pi, call it Ingress.</li>
         
-        <li class="list-group-item list-group-item-light">21.Install free linux loadbalancer (HAProxy) on it and balance across the 3 nodes.</li>
+        <li class="list-group-item list-group-item-success">21.Install free linux loadbalancer (HAProxy) on it and balance across the 3 nodes.</li>
         <li class="list-group-item list-group-item-success">22.Write a basic dotnet MVC Web API.</li>
         <li class="list-group-item list-group-item-light">23.Write a few dotnet MVC and console microservices.</li>
         <li class="list-group-item list-group-item-light">24.Adapt the basic frontend app to call the microservice via the api.</li>
-        <li class="list-group-item list-group-item-light">25.Set up appropriate K8s services to allow cluster access between the FE, API and MSvcs</li>
-        <li class="list-group-item list-group-item-light">26.Add permanent data store</li>
+        <li class="list-group-item list-group-item-success">25.Set up appropriate K8s services to allow cluster access between the FE, API and MSvcs</li>
+        <li class="list-group-item list-group-item-light">26.Add permanent data store.</li>
+        <li class="list-group-item list-group-item-light">27.Add message queue.</li>
+
     </ul>
 </div>
