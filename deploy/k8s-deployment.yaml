@@ -4,6 +4,10 @@ metadata:
   name: ub-frontend
   labels:
     app: ub-frontend
+    app.kubernetes.io/name: ub-frontend
+    app.kubernetes.io/component: website
+    app.kubernetes.io/part-of: ubiquitousbyte-system
+    app.kubernetes.io/managed-by: helm
 spec:
   replicas: 3
   selector:
