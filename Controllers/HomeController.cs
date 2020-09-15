@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ubiquitousbyte.Models;
@@ -21,7 +19,7 @@ namespace ubiquitousbyte.Controllers
         public IActionResult Index()
         {
             ViewData["MachineName"] = Environment.MachineName;
-            ViewData["ClientIPAddress"] = Request.HttpContext.Connection.RemoteIpAddress?.MapToIPv4()?.ToString();
+            ViewData["ClientIPAddress"] = Request.HttpContext.Connection.RemoteIpAddress;
             return View();
         }
 
