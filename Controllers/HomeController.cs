@@ -21,6 +21,7 @@ namespace ubiquitousbyte.Controllers
         public IActionResult Index()
         {
             ViewData["MachineName"] = Environment.MachineName;
+            ViewData["ClientIPAddress"] = Request.HttpContext.Connection.RemoteIpAddress?.MapToIPv4()?.ToString();
             return View();
         }
 
